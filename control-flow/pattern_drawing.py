@@ -1,7 +1,7 @@
 # The first line of code prompts the user to enter a number
 # The input is converted to an integer and stored in the 'rows' variable.
 # For example, if the user types '5', the value of 'rows' will be 5.
-rows = int(input("Enter a number: "))
+rows = int(input("Enter the size of the pattern: "))
     
 # This is the outer loop.
 # The 'range(rows)' function generates a sequence of numbers from 0 up to (but not including) the value of 'rows'.
