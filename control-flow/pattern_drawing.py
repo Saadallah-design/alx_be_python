@@ -4,7 +4,7 @@ row = 0
 while row < rows:
   col = 0
   while col < rows:
-    print("#", end="")
+    print("*", end="")
     col += 1
   print()
   row += 1
