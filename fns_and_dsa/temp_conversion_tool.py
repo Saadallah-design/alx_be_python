@@ -8,8 +8,8 @@
 # C = (F - 32) * (5/9)
 # F = (C * (9/5)) + 32
 # Note: The factors are stored as floating-point numbers for accurate division.
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 # Conversion Functions
 
