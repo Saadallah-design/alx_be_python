@@ -40,6 +40,20 @@ We used try...except for the "Remove Item" functionality to handle the scenario 
 * => By anticipating an error, we replace a harsh crash (a fatal unhandled exception) with a polite, user-friendly error message. This makes the application robust.
 
 
+
+## 2. Explore `datetime` Module
+Objective: Familiarize yourself with Python’s datetime module by writing a script that performs specified operations with dates and times.
+
+### datetime Module Learnings
+This project demonstrated the core functionality of Python's built-in datetime module, which is essential for working with dates, times, and time intervals in a structured way.
+
+1. Getting and Formatting Date/Time
+Concept	Python Implementation	Key Takeaway
+Current Date/Time	datetime.datetime.now()	The datetime.datetime class represents a specific moment (date + time). The static method .now() is used to instantiate an object representing the current local time.
+Formatting	datetime_obj.strftime("%Y-%m-%d %H:%M:%S")	The .strftime() (string format time) method converts a datetime object into a custom, human-readable string. Formatting is controlled by directive codes (e.g., %Y for year, %H for hour).
+
+---------------------------------------
+
 ## Setup
 1. First create the environment
     => python3 -m venv .venv
