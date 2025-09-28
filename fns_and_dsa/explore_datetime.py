@@ -1,5 +1,6 @@
 # starting with importing the time module
-import datetime 
+# changed import style
+from datetime import datetime, timedelta
 
 def display_current_datetime():
     current_date = datetime.datetime.now()
@@ -15,8 +16,8 @@ def calculate_future_date():
         print("Invalid input. Please enter a whole number.")
         return # exit the function if input is invalid
     
-    current_date2 = datetime.datetime.now()
-    time_delta = datetime.timedelta(days=added_days)
+    current_date2 = datetime.now()
+    time_delta = timedelta(days=added_days)
     
     # calculating the future date
     future_date =  current_date2 + time_delta
