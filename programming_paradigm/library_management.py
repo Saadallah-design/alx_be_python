@@ -14,6 +14,21 @@ class Book:
         # private attributes are not meant to be accessed directly from outside the class
         # by convention, we prefix private attributes with an underscore (_)
         self._is_checked_out = False
+    
+    # adding two methods to the Book class to check out and return a book
+    def check_out(self):
+        """ Method to check out the book. """
+        if self._is_checked_out == False:
+            self._is_checked_out = True
+            return True  # Successfully checked out
+        return False  # Book was already checked out
+    
+    def return_book(self):
+        """ Method to return the book. """
+        if self._is_checked_out:
+            self._is_checked_out = False
+            return True  # Successfully returned
+        return False  # Book was not checked out
 
     
 # Library class structure: Container for Book objects and methods to manage them
