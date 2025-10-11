@@ -17,7 +17,7 @@ class BankAccount:
 
     def __init__(self, account_balance=0):
         self.account_balance = account_balance
-        print(f"Current account balance: ${self.account_balance}")
+        # print(f"Current account balance: ${self.account_balance}")
 
     # Method to deposit money into the account
     def deposit(self, amount):
