@@ -18,10 +18,6 @@ class Calculator:
     @classmethod
     def multiply(cls, a, b):
         # Access the class attribute using the 'cls' parameter
-        method_type = cls.calculation_type 
-        
-        # We can use the class attribute in the output
-        print(f"[{method_type}] Calculating: {a} * {b}")
+        print(f"Calculation type: {cls.calculation_type}")
         return a * b
-    
     
