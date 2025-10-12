@@ -11,17 +11,17 @@ class Calculator:
     # for the static method we don't use self or cls as the first parameter
     # a static method does not have access to the instance (self) or class (cls)
     @staticmethod
-    def add(x, y):
-        return x + y
+    def add(a, b):
+        return a + b
 
     # for the class method we use cls as the first parameter by convention
     @classmethod
-    def multiply(cls, x, y):
+    def multiply(cls, a, b):
         # Access the class attribute using the 'cls' parameter
         method_type = cls.calculation_type 
-        result = x * y
+        result = a * b
         # We can use the class attribute in the output
-        print(f"[{method_type}] Calculating: {x} * {y}")
+        print(f"[{method_type}] Calculating: {a} * {b}")
         return result
     
     
