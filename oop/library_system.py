@@ -39,7 +39,7 @@ class Library:
     def add_book(self, book):
         if isinstance(book, Book):
             self.books.append(book)
-            print(f"Added {book}")
+            # print(f"Added {book}")
         else:
             print("Only Book instances can be added to the library.")
 
