@@ -5,7 +5,7 @@ class Book:
         self.author = author
 
     def __str__(self):
-        return f"Book: {self.title} by {self.author}"
+        return f"{self.title} by {self.author}"
 
     def __repr__(self):
         return f"Book: {self.title} by '{self.author}')"
@@ -16,7 +16,7 @@ class EBook(Book):
         self.file_size = file_size  # in KB
 
     def __str__(self):
-        return f"EBook: {super().__str__()} File Size: {self.file_size}KB"
+        return f"EBook: {super().__str__()}, File Size: {self.file_size}KB"
 
     def __repr__(self):
         return f"EBook: '{self.title}', '{self.author}', File Size: {self.file_size}KB)"
@@ -48,4 +48,9 @@ class Library:
             print("The library is empty.")
         else:
             for book in self.books:
-                print(book)
+                book_str = str(book)
+
+                if type(book) is Book:
+                    print(f"Book: {book_str}")
+                else:
+                    print(book_str)
